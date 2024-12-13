@@ -8,7 +8,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 
-
+/**
+ *
+ * @author Ronn Kevin Rubio
+ */
 @Entity
 @Table(name = "users")
 public class User {
@@ -26,7 +29,16 @@ public class User {
     public User(){
         
     }
-        public User(String email, String firstname, String middlename, String lastname, String gender, Integer age, String password) {
+        public User(
+                String email, 
+                String firstname, 
+                String middlename, 
+                String lastname, 
+                String gender, 
+                Integer age, 
+                String password
+        ) {
+            
         this.email = email;
         this.firstname = firstname;
         this.middlename = middlename;
