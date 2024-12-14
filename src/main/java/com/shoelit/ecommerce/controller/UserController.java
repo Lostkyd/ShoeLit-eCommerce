@@ -37,7 +37,7 @@ public class UserController {
         User createUser = userService.createUser(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(createUser);
     }
-    
+     
     @GetMapping("{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         return userService.getUserById(id)

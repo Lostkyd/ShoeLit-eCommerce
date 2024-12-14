@@ -4,15 +4,15 @@
  */
 package com.shoelit.ecommerce.repository;
 
-import com.shoelit.ecommerce.entity.User;
+import com.shoelit.ecommerce.entity.ERole;
+import com.shoelit.ecommerce.entity.Roles;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
- * @author Ronn Kevin Rubio
+ * @author itcrc
  */
-public interface UserRepo extends JpaRepository<User, Long>{
-    Optional<User> findByEmail(String email);
-    Boolean existsByEmail(String email);
+public interface RoleRepo extends JpaRepository<Roles, Long>{
+    Optional<Roles> findByName(ERole name);
 }
